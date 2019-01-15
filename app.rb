@@ -19,7 +19,7 @@ module FormsLab
         Course.new(details)
       end
 
-      erb :show
+      erb :"pirates/show"
     end
 
   end
