@@ -16,7 +16,7 @@ module FormsLab
       @pirates = Pirate.new(params[:pirate])
 
       @ships  = params[:pirate][:ships].map do |details|
-        Course.new(details)
+        Ship.new(details)
       end
 
       erb :"pirates/show"
